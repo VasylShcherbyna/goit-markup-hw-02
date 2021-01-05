@@ -1,5 +1,11 @@
 body {
   font-family: Roboto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 }
 .container-1 {
   display: flex;
@@ -9,6 +15,16 @@ body {
   left: 0px;
   top: 0px;
   background: #ffffff;
+}
+.link1:hover {
+  color: #2196f3;
+}
+.link1:focus {
+  color: #2196f3;
+}
+.link1 {
+  color: #212121;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 nav {
   flex: 1;
@@ -26,13 +42,37 @@ nav {
   height: 31px;
   left: 215px;
   top: 24px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+  font-family: Raleway;
+  font-style: normal; /* начертание текста */
+  font-weight: bold; /* Жирное начертание */
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
+.logo-link:hover {
+  color: #2196f3;
+}
+.logo-link:focus {
+  color: #2196f3;
+}
+.studio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold; /* Жирное начертание */
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.studio:hover {
+  color: #2196f3;
+}
+.studio:focus {
+  color: #2196f3;
+}
+
 .container-studia {
   position: absolute;
   width: 49px;
@@ -46,13 +86,14 @@ nav {
   height: 16px;
   left: 552px;
   top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 500; /* Жирное начертание */
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: #212121;
+}
+.container-portfolio :hover {
+  color: #2196f3;
 }
 .container-kontakty {
   position: absolute;
@@ -60,8 +101,6 @@ nav {
   height: 16px;
   left: 679px;
   top: 32px;
-
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -74,13 +113,11 @@ nav {
   height: 16px;
   left: 1078px;
   top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 .container-tel {
   position: absolute;
@@ -90,12 +127,67 @@ nav {
   top: 32px;
 
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  font-style: normal;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 li {
   list-style: none;
+}
+.block-h1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+}
+.contaner-h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.container-3 {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.knopka-1 {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.container-button-1 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.logo-link-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
