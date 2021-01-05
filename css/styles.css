@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
   font-style: normal;
@@ -190,4 +196,7 @@ li {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.footer-address {
+  font-style: normal;
 }
