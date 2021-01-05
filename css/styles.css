@@ -22,17 +22,16 @@ body {
   top: 0px;
   background: #ffffff;
 }
-.link1:hover {
-  color: #2196f3;
-}
-.link1:focus {
+.link1:hover,
+.link1:focus,
+.link1:active {
   color: #2196f3;
 }
 .link1 {
   color: #212121;
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
-nav {
+.container-nav {
   flex: 1;
   display: flex;
 }
@@ -57,10 +56,9 @@ nav {
   color: #2196f3;
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
-.logo-link:hover {
-  color: #2196f3;
-}
-.logo-link:focus {
+.logo-link:hover,
+.logo-link:focus,
+.logo-link:active {
   color: #2196f3;
 }
 .studio {
@@ -72,10 +70,9 @@ nav {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.studio:hover {
-  color: #2196f3;
-}
-.studio:focus {
+.studio:hover,
+.studio:focus,
+.studio:active {
   color: #2196f3;
 }
 
@@ -98,7 +95,9 @@ nav {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.container-portfolio :hover {
+.container-portfolio:hover,
+.container-portfolio:focus,
+.container-portfolio:active {
   color: #2196f3;
 }
 .container-kontakty {
@@ -139,7 +138,7 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-li {
+.container-li {
   list-style: none;
 }
 .block-h1 {
