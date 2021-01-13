@@ -1,27 +1,32 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --color-background--container: #ffffff;
+  --color-focus: #2196f3;
+  --font-family: Raleway;
 }
 
 body {
   font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 /*nav*/
 .container-1 {
-  background: #ffffff;
+  background: var(--color-background--container);
   color: var (--title-text-color);
 }
 .logo-link {
-  font-family: Raleway;
+  font-family: var(--font-family);
   font-weight: bold; /* Жирное начертание */
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--color-focus);
 }
 
 .studio {
-  font-family: Raleway;
+  font-family: var(--font-family);
   font-weight: bold; /* Жирное начертание */
   font-size: 26px;
   line-height: 1.19;
@@ -33,7 +38,7 @@ body {
 }
 .link1:hover,
 .link1:focus {
-  color: #2196f3;
+  color: var(--color-focus);
 }
 .link1:active {
   color: tomato;
@@ -65,7 +70,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-background--container);
 }
 /*button*/
 button.container-button-1 {
@@ -74,12 +79,11 @@ button.container-button-1 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--color-background--container);
+  background: var(--color-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer; /* cursor */
 }
 .text-title {
   font-weight: bold;
@@ -103,11 +107,11 @@ button.container-button-1 {
   top: 2097px;
 }
 .studio-footer .text-p {
-  color: #ffffff;
+  color: var(--color-background--container);
 }
 
 .logo-link-footer {
-  font-family: Raleway;
+  font-family: var(--font-family);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -115,7 +119,7 @@ button.container-button-1 {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 .container-footer span {
-  color: #ffffff;
+  color: var(--color-background--container);
 }
 .footer-address a {
   font-size: 14px;
@@ -136,11 +140,23 @@ button.filtry {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #f5f4fa;
+  background: var(--color-background--container);
   border-radius: 4px;
   color: #212121;
+  cursor: pointer; /* cursor */
 }
 button.filtry:hover button.filtry:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--color-focus);
+  color: var(--color-background--container);
+}
+/* Скрытый заголовок */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
