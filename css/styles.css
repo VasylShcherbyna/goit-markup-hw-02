@@ -54,14 +54,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.current {
+.list .current {
   color: var(--akcent-color);
 }
-.contakty a {
+.header-li a {
   list-style-type: none;
-  color: var(--primary-text-color);
   background: var(--color-background--container);
   color: var(--title-text-color);
+}
+.contakty a {
+  color: var(--primary-text-color);
 }
 .header-li {
   list-style-type: none;
