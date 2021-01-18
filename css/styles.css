@@ -3,6 +3,8 @@
   --title-text-color: #212121;
   --color-background--container: #ffffff;
   --color-focus: #2196f3;
+  --akcent-color: #2196f3;
+  --akcent-background: #ffffff;
   --font-family: Raleway;
 }
 
@@ -37,7 +39,8 @@ body {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 .link-main:hover,
-.link-main:focus {
+.link-main:focus,
+.link-main:target {
   color: var(--color-focus);
 }
 .link-main:active {
@@ -51,9 +54,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.current {
+  color: var(--akcent-color);
+}
 .contakty a {
   list-style-type: none;
   color: var(--primary-text-color);
+  background: var(--color-background--container);
+  color: var(--title-text-color);
 }
 .header-li {
   list-style-type: none;
@@ -152,9 +160,15 @@ button.filtry {
   color: #212121;
   cursor: pointer; /* cursor */
 }
-button.filtry:hover button.filtry:focus {
+button.filtry:hover,
+button.filtry:focus,
+button.filtry:target {
   background: var(--color-focus);
   color: var(--color-background--container);
+}
+button.current {
+  background: var(--akcent-color);
+  color: var(--akcent-background);
 }
 /* Скрытый заголовок */
 .visually-hidden {
