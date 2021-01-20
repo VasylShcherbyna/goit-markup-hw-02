@@ -75,6 +75,9 @@ body {
   list-style-type: none;
   font-style: normal;
 }
+.main-li .caption {
+  text-transform: uppercase;
+}
 .container-button {
   background: #2f303a;
 }
@@ -111,6 +114,9 @@ button.button-main {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.aside {
+  background: #f5f4fa;
 }
 .container-footer {
   background: #2f303a;
@@ -149,6 +155,9 @@ button.button-main {
 
 .text-p a {
   color: var(--primary-text-color);
+}
+.subtitle{
+  font-size: 18px;
 }
 button.filtry {
   font-family: inherit;
